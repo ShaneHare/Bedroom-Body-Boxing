@@ -1,0 +1,32 @@
+# ---- macOS ----
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# ---- Windows ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ---- editors ----
+*.swp
+*~
+.vscode/
+.idea/
+
+# ---- quarantine folders (safe to delete in Finder) ----
+_delete_me/
+_to_delete/
+_gitlocks_delete_me/
+
+# ---- client media originals ----
+# Phone originals are too big and often unplayable in browsers (HEVC .mov).
+# Convert to web-ready files in preview/assets/ and commit those instead.
+*.MOV
+*.mov
+*.HEIC
+*.heic
+originals/
