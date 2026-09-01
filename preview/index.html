@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bedroom Body Boxing — Hercules, CA</title>
-<meta name="description" content="Boxing and conditioning in Hercules, CA. No experience needed. First class $40 with Coach Lance. Est. 2010.">
+<title>Bedroom Body Boxing — Boxing Conditioning for Every Body</title>
+<meta name="description" content="Boxing conditioning for every body. Train like a boxer, get fit for life. From first-timers to fighters, kids to grandparents. 20+ years of coaching. Book your first class free.">
 <meta name="robots" content="noindex">
 <link rel="icon" href="assets/logo/logo-96.png">
 <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
@@ -14,7 +14,7 @@
 <style>
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
   :root{
-    --navy:#16223C; --navy-d:#0E1729; --cream:#F3E9DA; --cream-d:#E7DAC6;
+    --navy:#16223C; --navy-d:#0E1729; --cream:#F3E9DA; --cream-d:#EADFCB;
     --red:#BC1B25; --red-hi:#D6222E; --ink:#1A1712; --muted:#6E675C; --line:#DCCFB9;
   }
   html{scroll-behavior:smooth}
@@ -23,14 +23,13 @@
   h1,h2,h3{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;line-height:.98;letter-spacing:-.005em}
   .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
   a{color:inherit}
-  section{padding:86px 0}
+  section{padding:84px 0}
   .eyebrow{font:700 13px/1 'Barlow',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
-  h2.big{font-size:clamp(34px,5.2vw,58px);font-weight:700;margin:0 0 16px}
-  .sub{font-size:18px;line-height:1.6;color:var(--muted);max-width:58ch}
+  h2.big{font-size:clamp(34px,5.2vw,56px);font-weight:700;margin:0 0 16px}
+  .sub{font-size:18px;line-height:1.6;color:var(--muted);max-width:60ch}
 
-  /* draft markers */
   .d{border-bottom:1px dashed rgba(188,27,37,.5);cursor:help}
-  .ph{background:repeating-linear-gradient(45deg,#E7DAC6,#E7DAC6 12px,#E0D2BB 12px,#E0D2BB 24px);
+  .ph{background:repeating-linear-gradient(45deg,#EADFCB,#EADFCB 12px,#E2D5BE 12px,#E2D5BE 24px);
       border:1px dashed #C9B99E;border-radius:2px;display:flex;align-items:center;justify-content:center;
       text-align:center;color:#8A7F6C;font:600 12px/1.6 'Barlow',sans-serif;letter-spacing:.14em;
       text-transform:uppercase;padding:18px}
@@ -39,22 +38,20 @@
   .pv b{color:#fff}
   .pv .dot{border-bottom:1px dashed rgba(255,255,255,.6)}
 
-  header{position:sticky;top:0;z-index:40;background:rgba(243,233,218,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header{position:sticky;top:0;z-index:40;background:rgba(243,233,218,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:11px 0}
   .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
   .brand img{width:52px;height:52px;display:block}
   .brand .bt{font:700 21px/0.95 'Barlow Condensed',sans-serif;text-transform:uppercase;color:var(--navy)}
   .brand .bt em{font-style:normal;color:var(--red);display:block}
-  .links{display:none;gap:26px;font:600 14px/1 'Barlow',sans-serif;letter-spacing:.1em;text-transform:uppercase}
-  .links a{text-decoration:none;color:var(--muted)}
+  .links{display:none;gap:24px;font:600 14px/1 'Barlow',sans-serif;letter-spacing:.09em;text-transform:uppercase}
+  .links a{text-decoration:none;color:var(--muted);white-space:nowrap}
   .links a:hover{color:var(--navy)}
 
   .btn{display:inline-block;text-decoration:none;font:700 15px/1 'Barlow',sans-serif;letter-spacing:.08em;
        text-transform:uppercase;padding:15px 24px;border-radius:2px;background:var(--red);color:#fff;
-       border:2px solid var(--red);transition:.15s;white-space:nowrap}
+       border:2px solid var(--red);transition:.15s;white-space:nowrap;text-align:center}
   .btn:hover{background:var(--red-hi);border-color:var(--red-hi)}
-  .btn.navy{background:var(--navy);border-color:var(--navy)}
-  .btn.navy:hover{background:#1F3055;border-color:#1F3055}
   .btn.ghost{background:transparent;color:var(--navy);border-color:var(--navy)}
   .btn.ghost:hover{background:var(--navy);color:var(--cream)}
   .btn.onDark{background:transparent;color:#F3E9DA;border-color:rgba(243,233,218,.45)}
@@ -62,78 +59,109 @@
   .btn.lg{font-size:17px;padding:19px 32px}
   .btn.white{background:#fff;color:var(--navy);border-color:#fff}
 
-  /* HERO with his own footage */
   .hero{position:relative;background:var(--navy-d);color:var(--cream);overflow:hidden;isolation:isolate}
-  .hero video,.hero .fallback{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+  .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
   .hero::after{content:"";position:absolute;inset:0;z-index:-1;
-    background:linear-gradient(105deg,rgba(14,23,41,.94) 0%,rgba(14,23,41,.86) 42%,rgba(14,23,41,.55) 100%)}
-  .hero-inner{padding:70px 0 78px;max-width:660px}
-  .hero-badge{width:96px;height:96px;margin-bottom:24px;display:block}
-  .hero h1{font-size:clamp(44px,8.4vw,82px);font-weight:700;margin:0 0 20px;color:#fff}
-  .hero h1 em{font-style:normal;color:#FF5A67}
-  .hero .lead{font-size:19px;line-height:1.55;color:#D2D8E4;max-width:50ch;margin:0 0 30px}
+    background:linear-gradient(102deg,rgba(14,23,41,.93) 0%,rgba(14,23,41,.84) 46%,rgba(14,23,41,.5) 100%)}
+  .hero-inner{padding:68px 0 76px;max-width:680px}
+  .hero-badge{width:92px;height:92px;margin-bottom:22px;display:block}
+  .hero h1{font-size:clamp(40px,7.4vw,76px);font-weight:700;margin:0 0 14px;color:#fff}
+  .hero .tag{font:700 clamp(19px,2.6vw,26px)/1.15 'Barlow Condensed',sans-serif;text-transform:uppercase;
+             color:#FF6B77;margin-bottom:20px;letter-spacing:.01em}
+  .hero .lead{font-size:18.5px;line-height:1.6;color:#D2D8E4;max-width:52ch;margin:0 0 28px}
   .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
-  .badges{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:22px}
+  .badges{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:20px}
   .badge{font:600 12px/1 'Barlow',sans-serif;letter-spacing:.14em;text-transform:uppercase;
          border:1px solid rgba(243,233,218,.3);color:#C9D2E0;padding:9px 12px;border-radius:2px}
 
-  .fear-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:38px}
-  .fear{background:#fff;border:1px solid var(--line);border-radius:2px;padding:28px}
-  .fear .q{font:600 16px/1.45 'Barlow',sans-serif;color:var(--red);margin-bottom:10px}
-  .fear .a{font-size:16.5px;line-height:1.6;color:#453F35}
+  /* audience tiles */
+  .aud{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .aud-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:38px}
+  .aud-card{border:1px solid var(--line);border-left:3px solid var(--red);border-radius:2px;padding:24px}
+  .aud-card h3{font-size:23px;font-weight:700;color:var(--navy);margin-bottom:6px}
+  .aud-card .go{font:700 14px/1 'Barlow',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+  .aud-card p{font-size:15.5px;line-height:1.55;color:var(--muted)}
 
-  .who{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .who-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:36px}
-  .who-card{border:1px solid var(--line);border-radius:2px;padding:22px}
-  .who-card h3{font-size:22px;font-weight:700;color:var(--navy);margin-bottom:7px}
-  .who-card p{font-size:15.5px;line-height:1.55;color:var(--muted)}
+  /* worries */
+  .worry-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:38px}
+  .worry{background:#fff;border:1px solid var(--line);border-radius:2px;padding:26px}
+  .worry .q{font:600 16.5px/1.45 'Barlow',sans-serif;color:var(--red);margin-bottom:9px}
+  .worry .a{font-size:16px;line-height:1.6;color:#453F35}
+
+  /* how we train */
+  .train{background:var(--navy);color:var(--cream)}
+  .train h2.big{color:#fff}
+  .train .sub{color:#A8B3C6}
+  .pillars{display:grid;grid-template-columns:1fr;gap:16px;margin-top:40px}
+  .pillar{background:#1B2947;border:1px solid #2A3A5C;border-radius:2px;padding:26px}
+  .pillar h3{font-size:22px;font-weight:700;color:#fff;margin-bottom:9px}
+  .pillar p{font-size:15.5px;line-height:1.6;color:#C9D2E0}
 
   .cls-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:38px}
   .cls{background:#fff;border:1px solid var(--line);border-radius:2px;overflow:hidden;display:flex;flex-direction:column}
-  .cls img{width:100%;height:190px;object-fit:cover;display:block}
-  .cls .body{padding:24px;display:flex;flex-direction:column;gap:11px;flex:1}
+  .cls img{width:100%;height:200px;object-fit:cover;display:block}
+  .cls .body{padding:26px;display:flex;flex-direction:column;gap:11px;flex:1}
   .cls .tag{font:700 12px/1 'Barlow',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
-  .cls h3{font-size:26px;font-weight:700;color:var(--navy)}
-  .cls p{font-size:16px;line-height:1.6;color:#453F35}
+  .cls h3{font-size:27px;font-weight:700;color:var(--navy)}
+  .cls p{font-size:16px;line-height:1.62;color:#453F35}
+  .cls ul{margin:2px 0 0 18px;font-size:15.5px;line-height:1.7;color:#453F35}
   .cls .when{font-size:14.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:auto}
 
-  .pricing{background:var(--navy);color:var(--cream)}
-  .pricing h2.big{color:#fff}
-  .pricing .sub{color:#A8B3C6}
-  .tier-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:40px}
-  .tier{background:#1B2947;border:1px solid #2A3A5C;border-radius:2px;padding:28px;display:flex;flex-direction:column}
-  .tier.feature{border-color:var(--red);background:#22243E}
-  .tier .name{font:700 22px/1 'Barlow Condensed',sans-serif;text-transform:uppercase;margin-bottom:6px}
-  .tier .price{font:700 44px/1 'Barlow Condensed',sans-serif;margin:10px 0 4px;color:#fff}
-  .tier .price small{font-size:16px;color:#A8B3C6;font-weight:600}
-  .tier ul{list-style:none;margin:16px 0 22px;display:flex;flex-direction:column;gap:9px}
-  .tier li{font-size:15.5px;line-height:1.5;color:#C9D2E0;padding-left:20px;position:relative}
-  .tier li::before{content:"→";position:absolute;left:0;color:#FF5A67}
-  .tier .btn{margin-top:auto;text-align:center}
-  .flag{display:inline-block;font:700 11px/1 'Barlow',sans-serif;letter-spacing:.14em;text-transform:uppercase;
-        background:rgba(188,27,37,.2);color:#FF8A94;border:1px solid rgba(188,27,37,.6);
-        padding:6px 9px;border-radius:2px;margin-bottom:12px}
-  .paynote{margin-top:26px;font-size:15px;color:#A8B3C6;line-height:1.6}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .chip{font:600 14px/1 'Barlow',sans-serif;background:#fff;border:1px solid var(--line);
+        color:var(--navy);padding:12px 15px;border-radius:2px}
+
+  /* gallery */
+  .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:36px}
+  .gal img,.gal video{width:100%;height:100%;min-height:180px;object-fit:cover;display:block;border-radius:2px}
+  .gal .tall{grid-row:span 2}
+
+  /* schedule + pricing */
+  .sched{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sched-list{margin-top:34px;border-top:1px solid var(--line)}
+  .row{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;align-items:baseline;
+       padding:17px 0;border-bottom:1px solid var(--line)}
+  .row .day{font:700 21px/1 'Barlow Condensed',sans-serif;text-transform:uppercase;color:var(--navy);min-width:130px}
+  .row .what{font-size:16px;color:#453F35}
+  .row .time{font-size:15.5px;color:var(--muted)}
+
+  .price-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:36px}
+  .pcard{background:var(--cream);border:1px solid var(--line);border-radius:2px;padding:26px;display:flex;flex-direction:column}
+  .pcard.hero-offer{background:var(--red);border-color:var(--red);color:#fff}
+  .pcard h3{font-size:24px;font-weight:700;color:var(--navy);margin-bottom:8px}
+  .pcard.hero-offer h3{color:#fff}
+  .pcard p{font-size:15.5px;line-height:1.6;color:#453F35}
+  .pcard.hero-offer p{color:#FFDDE0}
+  .pcard ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin:14px 0 0}
+  .pcard li{font-size:15.5px;line-height:1.5;color:#453F35;padding-left:19px;position:relative}
+  .pcard li::before{content:"→";position:absolute;left:0;color:var(--red)}
+  .tbd{display:inline-block;font:700 11px/1 'Barlow',sans-serif;letter-spacing:.14em;text-transform:uppercase;
+       background:rgba(188,27,37,.09);color:var(--red);border:1px solid rgba(188,27,37,.35);
+       padding:6px 9px;border-radius:2px;margin-bottom:12px}
 
   .coach-grid{display:grid;grid-template-columns:1fr;gap:34px;align-items:start}
-  .coach-copy p{font-size:17px;line-height:1.7;color:#453F35;margin-bottom:16px}
-  .stats{display:flex;flex-wrap:wrap;gap:28px;margin-top:26px;padding-top:24px;border-top:1px solid var(--line)}
+  .coach-copy p{font-size:17px;line-height:1.72;color:#453F35;margin-bottom:16px}
+  .coach-copy p.kicker{font-size:20px;line-height:1.55;color:var(--navy);font-weight:600}
+  .stats{display:flex;flex-wrap:wrap;gap:30px;margin-top:26px;padding-top:24px;border-top:1px solid var(--line)}
   .stat .n{font:700 40px/1 'Barlow Condensed',sans-serif;color:var(--navy)}
   .stat .l{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:5px}
 
-  .proof{background:#fff;border-top:1px solid var(--line)}
+  .proof{background:var(--cream-d)}
   .quotes{display:grid;grid-template-columns:1fr;gap:18px;margin-top:36px}
-  .quote{border-left:3px solid var(--red);padding:6px 0 6px 22px}
-  .quote p{font-size:17.5px;line-height:1.6;margin-bottom:10px}
+  .quote{border-left:3px solid var(--red);padding:6px 0 6px 22px;background:transparent}
+  .quote p{font-size:17px;line-height:1.6;margin-bottom:10px}
   .quote .who2{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 
-  details{border-bottom:1px solid var(--line);padding:20px 0}
-  summary{font:700 21px/1.25 'Barlow Condensed',sans-serif;text-transform:uppercase;cursor:pointer;
+  details{border-bottom:1px solid var(--line);padding:19px 0}
+  summary{font:700 20px/1.25 'Barlow Condensed',sans-serif;text-transform:uppercase;cursor:pointer;
           list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;color:var(--navy)}
   summary::-webkit-details-marker{display:none}
   summary::after{content:"+";font-size:26px;color:var(--red);line-height:1}
   details[open] summary::after{content:"–"}
-  details p{font-size:16.5px;line-height:1.65;color:#453F35;margin-top:12px;max-width:62ch}
+  details p{font-size:16.5px;line-height:1.65;color:#453F35;margin-top:11px;max-width:64ch}
+  .faq-head{font:700 15px/1 'Barlow',sans-serif;letter-spacing:.16em;text-transform:uppercase;
+            color:var(--red);margin:38px 0 4px}
+  .faq-head:first-of-type{margin-top:26px}
 
   .visit-grid{display:grid;grid-template-columns:1fr;gap:30px}
   .info dt{font:700 13px/1 'Barlow',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
@@ -141,8 +169,9 @@
   .info dd a{text-decoration:none;border-bottom:1px solid var(--red)}
 
   .final{background:var(--red);color:#fff;text-align:center}
-  .final h2{font-size:clamp(36px,6vw,64px);font-weight:700;margin-bottom:16px}
-  .final p{font-size:19px;line-height:1.55;max-width:46ch;margin:0 auto 28px;color:#FFDDE0}
+  .final h2{font-size:clamp(34px,5.6vw,60px);font-weight:700;margin-bottom:18px}
+  .final p{font-size:19px;line-height:1.6;max-width:44ch;margin:0 auto 12px;color:#FFDDE0}
+  .final p.last{margin-bottom:28px}
 
   footer{background:var(--navy-d);color:#8C97AA;padding:44px 0;font-size:14.5px;line-height:1.7}
   footer a{color:#C9D2E0;text-decoration:none}
@@ -153,19 +182,24 @@
            display:flex;gap:10px;padding:10px 14px;border-top:1px solid #2A3A5C}
   .callbar a{flex:1;text-align:center;text-decoration:none;font:700 15px/1 'Barlow',sans-serif;
              letter-spacing:.06em;text-transform:uppercase;padding:15px 10px;border-radius:2px}
-  .callbar .c1{background:var(--red);color:#fff}
+  .callbar .c1{background:var(--red);color:#fff;flex:2}
   .callbar .c2{background:transparent;color:var(--cream);border:1px solid #3A4A6C}
 
-  @media(min-width:760px){
-    .fear-grid{grid-template-columns:repeat(3,1fr)}
+  @media(min-width:700px){
+    .worry-grid{grid-template-columns:repeat(2,1fr)}
+    .aud-grid{grid-template-columns:repeat(2,1fr)}
     .cls-grid{grid-template-columns:repeat(2,1fr)}
-    .tier-grid{grid-template-columns:repeat(3,1fr)}
+    .pillars{grid-template-columns:repeat(3,1fr)}
+    .price-grid{grid-template-columns:repeat(2,1fr)}
     .quotes{grid-template-columns:repeat(3,1fr)}
+  }
+  @media(min-width:960px){
+    .aud-grid{grid-template-columns:repeat(3,1fr)}
+    .worry-grid{grid-template-columns:repeat(3,1fr)}
+    .price-grid{grid-template-columns:repeat(4,1fr)}
     .coach-grid{grid-template-columns:.9fr 1.1fr;gap:52px}
     .visit-grid{grid-template-columns:1fr 1fr;gap:52px}
-    .hero-inner{padding:104px 0 116px}
-  }
-  @media(min-width:1000px){
+    .hero-inner{padding:100px 0 112px}
     .links{display:flex}
     body{padding-bottom:0}
     .callbar{display:none}
@@ -178,8 +212,8 @@
 <!-- ===== PREVIEW BANNER — delete before launch ===== -->
 <div class="pv">
   <div class="wrap">
-    <b>PREVIEW —</b> draft site for Coach Lance. Anything <span class="dot">underlined like this</span> we wrote as a placeholder and needs your yes/no.
-    Video and photos are from your own clips. Nothing here is live yet.
+    <b>PREVIEW —</b> draft site for Coach Lance. Anything <span class="dot">underlined like this</span> is still to be confirmed —
+    mostly schedule times, pricing and testimonials. Photos and video are from Lance's own clips. Nothing here is live yet.
   </div>
 </div>
 
@@ -190,17 +224,18 @@
       <span class="bt">Bedroom Body<em>Boxing</em></span>
     </a>
     <nav class="links">
-      <a href="#train">Training</a>
-      <a href="#classes">Classes</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#coach">Coach</a>
-      <a href="#visit">Visit</a>
+      <a href="#who">Who It's For</a>
+      <a href="#train">How We Train</a>
+      <a href="#classes">Training</a>
+      <a href="#coach">Coach Lance</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn" href="tel:15108306099">Call or Text</a>
+    <a class="btn" href="#book">Book Your First Class</a>
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
+<!-- ===== 1. HERO ===== -->
 <div class="hero" id="top">
   <video autoplay muted loop playsinline poster="assets/video/gym-poster.jpg">
     <source src="assets/video/gym-loop.mp4" type="video/mp4">
@@ -209,244 +244,416 @@
     <div class="hero-inner">
       <img class="hero-badge" src="assets/logo/logo-240.png" alt="">
       <div class="badges">
-        <span class="badge">Hercules, CA</span>
         <span class="badge">Est. 2010</span>
-        <span class="badge">Open 7 Days</span>
+        <span class="badge">20+ Years Coaching</span>
+        <span class="badge">All Levels Welcome</span>
       </div>
-      <h1>Never thrown<br>a punch? <em>Good.</em></h1>
+      <h1>Boxing Conditioning<br>for Every Body</h1>
+      <div class="tag">Train like a boxer. Get fit for life.</div>
       <p class="lead">
-        Real boxing training in Hercules — built for people who've never done it,
-        and sharp enough for people who have. You don't need to be fit first.
-        You don't need coordination. You need to show up once.
+        From first-timers to fighters, kids to grandparents, working professionals to
+        competitive athletes — there's a place for you here. You don't have to be a
+        fighter to train like one.
       </p>
       <div class="hero-cta">
-        <a class="btn lg" href="#pricing">Start for $40</a>
-        <a class="btn lg onDark" href="tel:15108306099">Call or Text Lance</a>
+        <a class="btn lg" href="#book">Book Your First Class</a>
+        <a class="btn lg onDark" href="#classes">Explore Training</a>
       </div>
       <p style="font-size:14.5px;color:#A8B3C6;margin-top:18px">
-        First class is $40. Bring gloves and water — that's it.
+        First class free. No experience. No pressure.
       </p>
     </div>
   </div>
 </div>
 
-<!-- ===== FEARS ===== -->
-<section id="train">
+<!-- ===== 2. THIS IS BOXING FOR YOU ===== -->
+<section class="aud" id="who">
+  <div class="wrap">
+    <div class="eyebrow">This is boxing for you</div>
+    <h2 class="big">Every body has<br>a starting point</h2>
+    <p class="sub">Bedroom Body Boxing makes authentic boxing training accessible at virtually every age,
+      fitness level, profession and level of experience.</p>
+
+    <div class="aud-grid">
+      <div class="aud-card">
+        <div class="go">Start here</div>
+        <h3>Never Boxed Before?</h3>
+        <p>You'll learn the fundamentals from the first round. No experience needed, and no one expects you to have any.</p>
+      </div>
+      <div class="aud-card">
+        <div class="go">Let's work</div>
+        <h3>Looking to Get Fit?</h3>
+        <p>A challenging full-body workout that happens to teach you a real skill. Far more engaging than a treadmill.</p>
+      </div>
+      <div class="aud-card">
+        <div class="go">Build your engine</div>
+        <h3>Athlete?</h3>
+        <p>Footwork, hand speed, coordination and conditioning that carries straight back into your sport.</p>
+      </div>
+      <div class="aud-card">
+        <div class="go">Sharpen up</div>
+        <h3>Experienced Fighter?</h3>
+        <p>Amateur and professional fighters train here too. Technique, conditioning and fighter development with a coach who's worked at that level.</p>
+      </div>
+      <div class="aud-card">
+        <div class="go">Fundamentals first</div>
+        <h3>Kids &amp; Teens?</h3>
+        <p>Coordination, discipline and confidence built on real technique, at a young athlete's pace.</p>
+      </div>
+      <div class="aud-card">
+        <div class="go">Start at your level</div>
+        <h3>50, 60, 70+?</h3>
+        <p>Training is modified around your ability, mobility and conditioning. Local grandmothers and grandfathers train here — you won't be the only one.</p>
+      </div>
+    </div>
+
+    <div class="chips">
+      <span class="chip">Complete beginners</span>
+      <span class="chip">Healthcare professionals</span>
+      <span class="chip">Business professionals</span>
+      <span class="chip">Women's groups</span>
+      <span class="chip">Parents</span>
+      <span class="chip">Corporate groups</span>
+      <span class="chip">Recreational athletes</span>
+      <span class="chip">High-level athletes</span>
+      <span class="chip">Amateur fighters</span>
+      <span class="chip">Professional fighters</span>
+      <span class="chip">Older adults</span>
+      <span class="chip">The neighbourhood</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. WORRIES ===== -->
+<section>
   <div class="wrap">
     <div class="eyebrow">Before you talk yourself out of it</div>
-    <h2 class="big">The three things<br>everybody says first</h2>
-    <p class="sub">These are the exact words Coach Lance hears at the door. Here's the honest answer to each.</p>
-    <div class="fear-grid">
-      <div class="fear">
-        <div class="q">"I haven't done boxing before."</div>
-        <div class="a">Neither had anyone else in the room on their first day. Every class starts from stance and footwork,
-          and you're shown what to do at each step. <span class="d" title="Drafted — confirm with Coach Lance">Nobody gets thrown in.</span></div>
+    <h2 class="big">You start<br>where you are</h2>
+    <p class="sub">These are the things people say before their first class. Here's the honest answer to each.</p>
+
+    <div class="worry-grid">
+      <div class="worry">
+        <div class="q">"I've never boxed before."</div>
+        <div class="a">Most people here hadn't either. The class teaches fundamentals from the ground up — stance, footwork, combinations — and beginners learn at their own pace.</div>
       </div>
-      <div class="fear">
-        <div class="q">"I'm not in good shape to box."</div>
-        <div class="a">Boxing is how you get in shape — not something you do after.
-          <span class="d" title="Drafted — confirm with Coach Lance">You work at your own pace and rest when you need to. The conditioning arrives as a side effect.</span></div>
+      <div class="worry">
+        <div class="q">"I'm too out of shape."</div>
+        <div class="a">You don't need to be in shape before you start. That's what the training is for. Exercises are modified to meet you where you are.</div>
       </div>
-      <div class="fear">
-        <div class="q">"I don't have any coordination."</div>
-        <div class="a">Coordination is the thing being taught.
-          <span class="d" title="Drafted — confirm with Coach Lance">Nobody looks smooth in week one. The footwork gets broken down slow, and it clicks faster than you'd think.</span></div>
+      <div class="worry">
+        <div class="q">"Will I get hit?"</div>
+        <div class="a">No. This is boxing conditioning — technique, footwork, bag and pad work. You are not going to be punched in a class.</div>
+      </div>
+      <div class="worry">
+        <div class="q">"Do I have to spar?"</div>
+        <div class="a">No. Sparring is not part of the conditioning class. Fighters who want that work arrange it separately with Coach Lance.</div>
+      </div>
+      <div class="worry">
+        <div class="q">"Am I too old?"</div>
+        <div class="a">No. Bedroom Body Boxing trains people well into their 60s and 70s, with the work adjusted to their ability and mobility.</div>
+      </div>
+      <div class="worry">
+        <div class="q">"Can I keep up?"</div>
+        <div class="a">You go at your pace and rest when you need to. The class runs at all levels at once — that's how it's built.</div>
+      </div>
+      <div class="worry">
+        <div class="q">"Everyone else will be better than me."</div>
+        <div class="a">Some will be. Others are on their first day. Nobody here is watching you — they're busy learning their own combinations.</div>
+      </div>
+      <div class="worry">
+        <div class="q">"What if I have physical limitations?"</div>
+        <div class="a">Tell Coach Lance before class. Training can be modified around ability, mobility and experience.</div>
+      </div>
+      <div class="worry">
+        <div class="q">"Do I need my own equipment?"</div>
+        <div class="a">Bring comfortable clothes, athletic shoes and water. Bring boxing gloves if you own them.
+          <span class="d" title="TBD — confirm whether loaner gloves are available for first-timers">Loaner equipment to be confirmed.</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== WHO ===== -->
-<section class="who">
+<!-- ===== 4. HOW WE TRAIN ===== -->
+<section class="train">
   <div class="wrap">
-    <div class="eyebrow">Who trains here</div>
-    <h2 class="big">One gym, six kinds of people</h2>
-    <p class="sub">Built for total beginners — and it holds up for people who already know how to box.</p>
-    <div class="who-grid">
-      <div class="who-card"><h3>Total Beginners</h3><p>Never boxed, never trained. The default starting point here.</p></div>
-      <div class="who-card"><h3>Fitness &amp; Weight Loss</h3><p>Conditioning that doesn't feel like a treadmill. You learn a skill while you burn.</p></div>
-      <div class="who-card"><h3>Kids &amp; Teens</h3><p><span class="d" title="Drafted — confirm ages and format">Discipline, focus and confidence, with real technique — not babysitting.</span></p></div>
-      <div class="who-card"><h3>Women's Groups</h3><p><span class="d" title="Drafted — confirm whether these are separate sessions">Women-only sessions for anyone who'd rather start in that room.</span></p></div>
-      <div class="who-card"><h3>Sport Athletes</h3><p><span class="d" title="Drafted — confirm which sports">Footwork, hand speed and conditioning that carries into your sport.</span></p></div>
-      <div class="who-card"><h3>Corporate &amp; Groups</h3><p><span class="d" title="Drafted — confirm group size and pricing">Team sessions and private group events. Ask about booking the room.</span></p></div>
+    <div class="eyebrow" style="color:#FF8A94">How we train</div>
+    <h2 class="big">Real boxing.<br>Real conditioning.<br>Your level.</h2>
+    <p class="sub">Every session combines genuine boxing technique with full-body conditioning — challenging without
+      being intimidating, and modified to meet each person where they are.</p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <h3>Fundamentals &amp; Technique</h3>
+        <p>Stance, guard, footwork and combinations taught properly. The technique is real boxing, not a fitness impression of it.</p>
+      </div>
+      <div class="pillar">
+        <h3>Movement &amp; Conditioning</h3>
+        <p>Boxing-inspired movement, bag work and conditioning that builds a full-body engine while keeping the hour engaging.</p>
+      </div>
+      <div class="pillar">
+        <h3>Confidence &amp; Community</h3>
+        <p>Discipline, consistency and personal development, in a room where a first-timer and a professional fighter train side by side.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===== CLASSES ===== -->
+<!-- ===== 5. TRAINING OPTIONS ===== -->
 <section id="classes">
   <div class="wrap">
-    <div class="eyebrow">The schedule</div>
-    <h2 class="big">What you'll actually do</h2>
-    <p class="sub">Open Monday through Sunday.
-      <span class="d" title="NEEDED — Lance hasn't given class names, times or descriptions yet. Everything in this section is our draft.">Class names, times and descriptions below are our draft — Lance needs to confirm them.</span></p>
+    <div class="eyebrow">Training options</div>
+    <h2 class="big">Learn. Move. Sweat.<br>Have fun.</h2>
+    <p class="sub">Two ways to train today, with more on the way as the program grows.</p>
+
     <div class="cls-grid">
       <div class="cls">
-        <img src="assets/photos/class-1.jpg" alt="Group class training at Bedroom Body Boxing">
+        <img src="assets/photos/class-1.jpg" alt="Group boxing conditioning class in progress">
         <div class="body">
-          <div class="tag">Start here</div>
-          <h3><span class="d" title="Drafted class name">Boxing Fundamentals</span></h3>
-          <p><span class="d" title="Drafted description">Stance, guard, footwork and the basic punches. Bag work and pad rounds with correction every round. This is the class you walk into on day one, whatever shape you're in.</span></p>
-          <div class="when"><span class="d" title="NEEDED — real days and times">Days &amp; times to be confirmed</span> · All levels</div>
+          <div class="tag">Group class · All levels · 1 hour</div>
+          <h3>Bedroom Body Boxing</h3>
+          <p>A high-energy, all-level boxing conditioning class where you learn the fundamentals of boxing while
+            getting a challenging full-body workout. Training brings together boxing movement, technique, footwork,
+            combinations and conditioning, designed to build fitness while keeping the hour engaging and fun.</p>
+          <p><strong>No boxing experience is required.</strong> Beginners learn at their own pace while experienced
+            participants keep developing their technique and conditioning.</p>
+          <div class="when"><span class="d" title="TBD — Lance to confirm the weekly class times">Days &amp; times vary — see schedule below</span></div>
         </div>
       </div>
+
       <div class="cls">
-        <img src="assets/photos/gym-1.jpg" alt="Conditioning work on the floor">
+        <img src="assets/photos/gym-1.jpg" alt="One-to-one coaching at Bedroom Body Boxing">
         <div class="body">
-          <div class="tag">Conditioning</div>
-          <h3><span class="d" title="Drafted class name">Boxing Conditioning</span></h3>
-          <p><span class="d" title="Drafted description">Rounds on the bag, bodyweight work and circuits built around boxing movement. Technique stays honest, the pace goes up. Scale it to whatever you've got that day.</span></p>
-          <div class="when"><span class="d" title="NEEDED — real days and times">Days &amp; times to be confirmed</span> · All levels</div>
+          <div class="tag">One-on-one · All levels · 1 hour</div>
+          <h3>Personal Boxing &amp; Conditioning</h3>
+          <p>Focused, one-on-one attention with training built around your individual goals, fitness level, boxing
+            experience and interests. Sessions can work on:</p>
+          <ul>
+            <li>Boxing fundamentals and technique</li>
+            <li>Footwork and movement</li>
+            <li>Conditioning and fitness</li>
+            <li>Athletic performance</li>
+            <li>Skill and fighter development</li>
+          </ul>
+          <div class="when">By appointment · <span class="d" title="TBD — personal training pricing not yet set">Pricing to be confirmed</span></div>
         </div>
       </div>
-      <div class="cls">
-        <img src="assets/photos/class-2.jpg" alt="Training on the turf">
-        <div class="body">
-          <div class="tag">Youth</div>
-          <h3><span class="d" title="Drafted class name">Kids &amp; Teens Boxing</span></h3>
-          <p><span class="d" title="Drafted description">Real technique at a young athlete's pace. Focus, discipline and conditioning, with no contact until a coach says they're ready.</span></p>
-          <div class="when"><span class="d" title="NEEDED — real days, times and age range">Ages &amp; times to be confirmed</span></div>
-        </div>
-      </div>
-      <div class="cls">
-        <img src="assets/photos/gym-2.jpg" alt="One-on-one work at the gym">
-        <div class="body">
-          <div class="tag">1-on-1</div>
-          <h3>Personal Training</h3>
-          <p><span class="d" title="Drafted description">Private session with Coach Lance. The fastest way to fix technique, build a plan, or train around an injury or a schedule that won't fit a class.</span> $80 per session.</p>
-          <div class="when">By appointment · Call or text to book</div>
-        </div>
+    </div>
+
+    <div style="margin-top:44px">
+      <div class="eyebrow" style="margin-bottom:10px">Coming as the program grows</div>
+      <div class="chips" style="margin-top:14px">
+        <span class="chip">Beginner Boxing</span>
+        <span class="chip">Boxing Conditioning</span>
+        <span class="chip">Youth Boxing &amp; Conditioning</span>
+        <span class="chip">Women's Boxing Sessions</span>
+        <span class="chip">Athletic Conditioning</span>
+        <span class="chip">Fighter Development</span>
+        <span class="chip">Corporate Group Training</span>
+        <span class="chip">Small-Group Training</span>
+        <span class="chip">Community Workouts</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== PRICING ===== -->
-<section class="pricing" id="pricing">
-  <div class="wrap">
-    <div class="eyebrow" style="color:#FF8A94">Pricing</div>
-    <h2 class="big">Simple. No contracts.</h2>
-    <p class="sub">Coach Lance's rule is keep it simple. Pay for what you use, or go monthly and stop counting.</p>
-
-    <div class="tier-grid">
-      <div class="tier">
-        <div class="name">Try it</div>
-        <div class="price">$40<small> one class</small></div>
-        <ul><li>Your first class, any class</li><li>Gloves and water is all you bring</li><li>No sign-up, no commitment</li></ul>
-        <a class="btn onDark" href="tel:15108306099">Book it</a>
-      </div>
-      <div class="tier feature">
-        <span class="flag">Proposed — needs Lance's OK</span>
-        <div class="name">Unlimited Monthly</div>
-        <div class="price">$199<small> / month</small></div>
-        <ul><li>Every class, every day</li><li>Cancel any time, no contract</li><li>Cheaper than 5 drop-ins</li><li>Discounted personal training</li></ul>
-        <a class="btn" href="tel:15108306099">Call or Text</a>
-      </div>
-      <div class="tier">
-        <span class="flag">Proposed — needs Lance's OK</span>
-        <div class="name">4 Classes Monthly</div>
-        <div class="price">$149<small> / month</small></div>
-        <ul><li>One class a week</li><li>Rolls over if you miss one</li><li>Cancel any time</li></ul>
-        <a class="btn onDark" href="tel:15108306099">Call or Text</a>
-      </div>
-    </div>
-
-    <div class="tier-grid" style="margin-top:16px">
-      <div class="tier"><div class="name">Drop-in</div><div class="price">$50<small> per class</small></div></div>
-      <div class="tier"><div class="name">5-Class Pack</div><div class="price">$200<small> · $40 a class</small></div></div>
-      <div class="tier"><div class="name">10-Class Pack</div><div class="price">$400<small> · $40 a class</small></div></div>
-    </div>
-
-    <p class="paynote">Personal training is $80 per session.
-      <span class="d" style="border-color:rgba(255,255,255,.35)" title="NEEDED — which payment methods Lance takes in person">Payment methods in person to be confirmed.</span>
-      No booking app — call or text Coach Lance and he'll get you in.</p>
-  </div>
-</section>
-
-<!-- ===== COACH ===== -->
-<section id="coach">
+<!-- ===== 6. MEET COACH LANCE ===== -->
+<section id="coach" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
     <div class="coach-grid">
-      <div><div class="ph" style="height:420px">Photo — Coach Lance<br>portrait in the gym</div></div>
+      <div><div class="ph" style="height:440px">Photo — Coach Lance<br>portrait in the gym<br><br>(Lance has one — needs sending)</div></div>
       <div class="coach-copy">
-        <div class="eyebrow">Your coach</div>
-        <h2 class="big">Coach Lance</h2>
-        <p><span class="d" title="NEEDED — our draft of Lance's story. He needs to replace it with his own.">Lance has been at this long enough to know that almost nobody walks through the door confident.
-          They walk in thinking they're too old, too out of shape, too uncoordinated — and then they hit the bag
-          for the first time and something shifts.</span></p>
-        <p><span class="d" title="NEEDED — Lance's real reason for coaching">That's the reason he coaches. Not to build fighters, though some of them become that. To hand people
-          the thing boxing handed him: proof that you can be bad at something on Monday and decent at it by Friday.</span></p>
-        <p><span class="d" title="Drafted — confirm">Every class is coached by Lance personally. No rotating staff, no screens, no watching a video and hoping you got it right.</span></p>
+        <div class="eyebrow">Meet your coach</div>
+        <h2 class="big">20+ years.<br>Every level.</h2>
+        <p class="kicker">Bedroom Body Boxing started with a simple idea: you shouldn't have to be a fighter to train like one.</p>
+        <p>Built on more than 20 years of boxing and coaching experience, Coach Lance developed an approach that takes
+          the discipline, movement, conditioning, technique and confidence of boxing and makes them accessible to
+          everyday people.</p>
+        <p>That philosophy has brought an unusually diverse group together. Healthcare professionals and business
+          professionals train alongside athletes. Complete beginners learn the fundamentals while experienced boxers
+          sharpen their skills. Children and teenagers build coordination, discipline and confidence. Local grandmothers
+          and grandfathers discover that boxing conditioning can meet them at their level too.</p>
+        <p>At the competitive end, Lance's experience lets him work with athletes ranging from amateur competitors to
+          professional fighters.</p>
+        <p><strong>Different ages. Different professions. Different goals. Different starting points. One community.</strong></p>
+        <p>Bedroom Body Boxing isn't about proving how tough you are. It's about discovering how strong you can become.</p>
         <div class="stats">
-          <div class="stat"><div class="n">2010</div><div class="l">Est.</div></div>
-          <div class="stat"><div class="n d" title="NEEDED — real number of years">—</div><div class="l">Years coaching</div></div>
-          <div class="stat"><div class="n d" title="NEEDED — certifications">—</div><div class="l">Certifications</div></div>
+          <div class="stat"><div class="n">20+</div><div class="l">Years coaching</div></div>
+          <div class="stat"><div class="n">All</div><div class="l">Ages &amp; levels</div></div>
+          <div class="stat"><div class="n d" title="TBD — only publish verified certifications, licences, CPR/AED or affiliations">—</div><div class="l">Certifications</div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== PROOF ===== -->
+<!-- ===== 7. REAL PEOPLE ===== -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Real people. Real training.</div>
+    <h2 class="big">This is the room</h2>
+    <p class="sub">Professionals, parents, kids, athletes, beginners, experienced fighters and grandparents — training in the same hour.</p>
+    <div class="gal">
+      <video class="tall" autoplay muted loop playsinline poster="assets/video/gym-poster.jpg" style="min-height:380px">
+        <source src="assets/video/gym-loop-2.mp4" type="video/mp4">
+      </video>
+      <img src="assets/photos/class-2.jpg" alt="Class working through combinations">
+      <img src="assets/photos/gym-2.jpg" alt="Training on the floor at Bedroom Body Boxing">
+    </div>
+    <p style="font-size:14.5px;color:var(--muted);margin-top:14px">
+      <span class="d" title="TBD — Lance has more photos and video. Send them and we'll swap these for a wider mix of people and ages.">More of Lance's photos and video to be added — the goal is to visibly show the range of people who train here.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ===== 8. MEMBER STORIES ===== -->
 <section class="proof">
   <div class="wrap">
-    <div class="eyebrow">Results</div>
+    <div class="eyebrow">Member stories</div>
     <h2 class="big">What people say</h2>
-    <p class="sub"><span class="d" title="NEEDED — real reviews or client results. These three are placeholders and must be replaced before launch.">Placeholder quotes — Lance needs to send real reviews or client results before this goes live.</span></p>
+    <p class="sub"><span class="d" title="TBD — collect 5–10 authentic testimonials. Aim for a beginner, a healthcare or business professional, a woman in the program, a parent of a youth participant, an older adult, and a competitive athlete.">These are placeholders. Real testimonials still to be collected — ideally a beginner, a professional, a woman in the program, a youth parent, an older adult and a competitive athlete.</span></p>
     <div class="quotes">
-      <div class="quote"><p><span class="d" title="PLACEHOLDER — replace with a real review">"I'd never boxed in my life. Six months later I'm in the best shape I've been in since high school."</span></p><div class="who2">Placeholder</div></div>
-      <div class="quote"><p><span class="d" title="PLACEHOLDER — replace with a real review">"My son walks taller since he started. That's worth more to me than the workout."</span></p><div class="who2">Placeholder</div></div>
-      <div class="quote"><p><span class="d" title="PLACEHOLDER — replace with a real review">"Lance actually corrects you. I've been to gyms where nobody watched me once."</span></p><div class="who2">Placeholder</div></div>
+      <div class="quote"><p><span class="d" title="PLACEHOLDER — replace with a real testimonial">"I'd never put on a pair of gloves. Nobody made me feel like I didn't belong."</span></p><div class="who2">Placeholder</div></div>
+      <div class="quote"><p><span class="d" title="PLACEHOLDER — replace with a real testimonial">"I'm 62. Lance modified everything to what I could do, and I've kept going."</span></p><div class="who2">Placeholder</div></div>
+      <div class="quote"><p><span class="d" title="PLACEHOLDER — replace with a real testimonial">"My daughter's confidence changed more than her fitness did."</span></p><div class="who2">Placeholder</div></div>
     </div>
   </div>
 </section>
 
-<!-- ===== FAQ ===== -->
-<section>
-  <div class="wrap" style="max-width:820px">
-    <div class="eyebrow">Questions</div>
-    <h2 class="big" style="margin-bottom:26px">Before you come in</h2>
-    <details open><summary>What do I need to bring?</summary><p>Boxing gloves and water. That's it.</p></details>
-    <details><summary>Do I need experience?</summary><p>No. The gym is built for people who have never boxed. It also works if you already know how — <span class="d" title="Drafted">Lance scales the work to whoever's in front of him.</span></p></details>
-    <details><summary>How do I sign up?</summary><p>Call or text Coach Lance at <a href="tel:15108306099" style="border-bottom:1px solid var(--red);text-decoration:none">(510) 830-6099</a>. There's no app and no online booking — he'll get you in.</p></details>
-    <details><summary>Do you spar?</summary><p><span class="d" title="NEEDED — Lance's real answer on sparring policy">Sparring policy to be confirmed.</span></p></details>
-    <details><summary>Is there a contract?</summary><p>No. Lance's rule is keep it simple — packs don't lock you in, and monthly can be cancelled any time.</p></details>
-    <details><summary>Is there parking?</summary><p><span class="d" title="NEEDED — Lance's real answer on parking">Parking details to be confirmed.</span></p></details>
+<!-- ===== 9. SCHEDULE & PRICING ===== -->
+<section class="sched" id="schedule">
+  <div class="wrap">
+    <div class="eyebrow">Schedule</div>
+    <h2 class="big">When we train</h2>
+    <p class="sub">Classes and personal training run throughout the week based on availability.
+      <span class="d" title="TBD — Lance to confirm the actual weekly times. This layout is the placeholder.">The times below are a placeholder until Lance confirms the weekly schedule.</span></p>
+
+    <div class="sched-list">
+      <div class="row"><div class="day">Monday</div><div class="what">Bedroom Body Boxing</div><div class="time d" title="TBD">Time to be confirmed</div></div>
+      <div class="row"><div class="day">Tuesday</div><div class="what">Personal Boxing &amp; Conditioning</div><div class="time">By appointment</div></div>
+      <div class="row"><div class="day">Wednesday</div><div class="what">Bedroom Body Boxing</div><div class="time d" title="TBD">Time to be confirmed</div></div>
+      <div class="row"><div class="day">Thursday</div><div class="what">Personal Boxing &amp; Conditioning</div><div class="time">By appointment</div></div>
+      <div class="row"><div class="day">Friday</div><div class="what">Bedroom Body Boxing</div><div class="time d" title="TBD">Time to be confirmed</div></div>
+      <div class="row"><div class="day">Sat / Sun</div><div class="what">Classes &amp; personal training</div><div class="time d" title="TBD">Availability to be confirmed</div></div>
+    </div>
+
+    <div style="margin-top:64px">
+      <div class="eyebrow">Pricing</div>
+      <h2 class="big">How to join</h2>
+      <p class="sub">Start with a free class. After that, choose whatever fits how often you want to train.</p>
+
+      <div class="price-grid">
+        <div class="pcard hero-offer">
+          <h3>Your First Round</h3>
+          <p style="font:700 30px/1 'Barlow Condensed',sans-serif;text-transform:uppercase;margin:10px 0 8px;color:#fff">First Class Free</p>
+          <p>No experience. No pressure. Come and see what Bedroom Body Boxing is about.</p>
+          <a class="btn white" style="margin-top:20px" href="#book">Book It</a>
+        </div>
+        <div class="pcard">
+          <span class="tbd">Pricing to be confirmed</span>
+          <h3>Monthly Membership</h3>
+          <p>For people training regularly. Limited and unlimited options.</p>
+          <ul><li>Limited monthly</li><li>Unlimited monthly</li><li>Youth membership</li></ul>
+        </div>
+        <div class="pcard">
+          <span class="tbd">Pricing to be confirmed</span>
+          <h3>Class Packs</h3>
+          <p>Flexibility without committing to a membership.</p>
+          <ul><li>Single-class drop-in</li><li>5-class pack</li><li>10-class pack</li></ul>
+        </div>
+        <div class="pcard">
+          <span class="tbd">Pricing to be confirmed</span>
+          <h3>Personal Training</h3>
+          <p>One-on-one boxing and conditioning built around your goals.</p>
+          <ul><li>By appointment</li><li>All levels</li><li>1 hour</li></ul>
+        </div>
+      </div>
+
+      <p style="font-size:15.5px;line-height:1.65;color:var(--muted);margin-top:26px">
+        Payment accepted by credit or debit card, Venmo, Zelle and Cash App.
+        <span class="d" title="TBD — confirm whether cash is accepted">Cash to be confirmed.</span>
+        A waiver is required before your first class — for under-18s, a parent or guardian signs.
+      </p>
+    </div>
   </div>
 </section>
 
-<!-- ===== VISIT ===== -->
-<section id="visit" style="background:var(--cream-d)">
+<!-- ===== 10. FAQ ===== -->
+<section id="faq">
+  <div class="wrap" style="max-width:840px">
+    <div class="eyebrow">First-timer FAQ</div>
+    <h2 class="big">Before you come in</h2>
+
+    <div class="faq-head">Starting out</div>
+    <details open><summary>I've never boxed. Can I still join?</summary><p>Yes — that's who the class is built for. You'll learn the fundamentals from your first session, at your own pace.</p></details>
+    <details><summary>Do I have to be in shape before starting?</summary><p>No. You don't need to get fit before you join; the training is how you get fit. Exercises are modified to your level.</p></details>
+    <details><summary>Are classes really appropriate for beginners?</summary><p>Yes. No previous boxing experience is required, and beginners train in the same class as everyone else with the work scaled to them.</p></details>
+    <details><summary>Can I try a class before joining?</summary><p>Yes. Your first class is free — come and see whether it's for you before committing to anything.</p></details>
+
+    <div class="faq-head">What actually happens</div>
+    <details><summary>Will I get hit?</summary><p>No. This is boxing conditioning — technique, footwork, bag and pad work. You will not be punched in a class.</p></details>
+    <details><summary>Do I have to spar?</summary><p>No. Sparring isn't part of the conditioning class.</p></details>
+    <details><summary>How long is each class?</summary><p>One hour.</p></details>
+    <details><summary>Can exercises be modified?</summary><p>Yes. Training is adjusted around ability, mobility, conditioning and experience. Tell Coach Lance anything he should know before you start.</p></details>
+
+    <div class="faq-head">What to bring</div>
+    <details><summary>What should I wear and bring?</summary><p>Comfortable workout clothing, athletic shoes and water. Bring boxing gloves if you already own them.</p></details>
+    <details><summary>Do I need my own boxing gloves?</summary><p>Bring them if you have them. <span class="d" title="TBD — confirm loaner glove availability">Whether loaner gloves are available is still to be confirmed.</span></p></details>
+    <details><summary>How early should I arrive?</summary><p>Ten to fifteen minutes before your first class, so there's time to complete your waiver and get set up.</p></details>
+    <details><summary>Where should I park?</summary><p><span class="d" title="TBD — Lance to confirm parking">Parking details to be confirmed.</span></p></details>
+
+    <div class="faq-head">Who trains here</div>
+    <details><summary>Can experienced boxers train here?</summary><p>Yes. Experienced participants keep developing technique and conditioning in the same class, and Lance works with amateur and professional fighters.</p></details>
+    <details><summary>Do you train children and teenagers?</summary><p>Yes — with training built around a young athlete's pace, focused on fundamentals, coordination, discipline and confidence.</p></details>
+    <details><summary>Do you train older adults?</summary><p>Yes, with the work modified appropriately based on individual ability, mobility, conditioning and experience.</p></details>
+    <details><summary>Do you offer women's training?</summary><p>Yes. Women's sessions are part of the program.</p></details>
+    <details><summary>Do you train athletes from other sports?</summary><p>Yes. Boxing conditioning builds footwork, coordination, hand speed and an engine that carries into other sports.</p></details>
+    <details><summary>Do you offer corporate or group sessions?</summary><p>Yes — corporate and small-group training are available. Get in touch about booking a group.</p></details>
+
+    <div class="faq-head">Booking &amp; payment</div>
+    <details><summary>How do I book?</summary><p>Call or text Coach Lance at <a href="tel:15108306099" style="border-bottom:1px solid var(--red);text-decoration:none">(510) 830-6099</a>. <span class="d" title="TBD — online booking system not yet selected">Online booking is coming.</span></p></details>
+    <details><summary>What payment methods do you accept?</summary><p>Credit or debit card, Venmo, Zelle and Cash App. <span class="d" title="TBD — confirm cash">Cash to be confirmed.</span></p></details>
+    <details><summary>Is there a waiver?</summary><p>Yes. A waiver is required before your first class. For participants under 18, a parent or guardian completes it.</p></details>
+  </div>
+</section>
+
+<!-- ===== 11. VISIT / BOOK ===== -->
+<section id="book" style="background:var(--cream-d)">
   <div class="wrap">
     <div class="visit-grid">
       <div>
-        <div class="eyebrow">Come by</div>
-        <h2 class="big">Find us</h2>
-        <dl class="info" style="margin-top:30px">
-          <dt>Address</dt><dd>2147 Lewis Street<br>Hercules, CA 94547</dd>
-          <dt>Hours</dt><dd>Monday – Sunday, all day<br><span style="font-size:15px;color:var(--muted)" class="d" title="NEEDED — real opening and closing times per day">Exact daily hours to be confirmed</span></dd>
+        <div class="eyebrow">Book your first class</div>
+        <h2 class="big">Come by</h2>
+        <p class="sub" style="margin-bottom:26px">Call or text Coach Lance and he'll get you into the next class. First one's free.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px">
+          <a class="btn lg" href="tel:15108306099">Call (510) 830-6099</a>
+          <a class="btn lg ghost" href="sms:15108306099">Text Lance</a>
+        </div>
+        <dl class="info">
+          <dt>Address</dt>
+          <dd>2147 Lewis Street<br><span class="d" title="TBD — city, state and ZIP need confirming">City, State ZIP to be confirmed</span></dd>
+          <dt>Hours</dt>
+          <dd>Daily<br><span style="font-size:15px;color:var(--muted)">Classes and personal training scheduled throughout the week based on availability.</span></dd>
           <dt>Phone</dt><dd><a href="tel:15108306099">(510) 830-6099</a></dd>
           <dt>Email</dt><dd><a href="mailto:idio11@hotmail.com">idio11@hotmail.com</a></dd>
-          <dt>Social</dt><dd><span class="d" title="NEEDED — actual Instagram and Facebook links">Instagram &amp; Facebook — links to be added</span></dd>
+          <dt>Social</dt><dd><span class="d" title="TBD — Instagram and Facebook profile URLs needed">Instagram &amp; Facebook — profile links to be added</span></dd>
         </dl>
       </div>
       <div style="align-self:stretch">
-        <video style="width:100%;height:100%;min-height:320px;object-fit:cover;border-radius:2px;display:block"
-               autoplay muted loop playsinline poster="assets/photos/gym-2.jpg">
-          <source src="assets/video/gym-loop-2.mp4" type="video/mp4">
-        </video>
-        <p style="font-size:13px;color:var(--muted);margin-top:8px" class="d" title="A real map embed goes here at launch">Map embed goes here at launch</p>
+        <div class="ph" style="min-height:380px;height:100%">Map goes here at launch</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== FINAL CTA ===== -->
+<!-- ===== 12. FINAL CTA ===== -->
 <section class="final">
   <div class="wrap">
-    <h2>One class.<br>Forty dollars.</h2>
-    <p>You'll know after one whether this is for you. Bring gloves and water.</p>
-    <a class="btn lg white" href="tel:15108306099">Call or Text (510) 830-6099</a>
+    <h2>Your first round<br>starts here</h2>
+    <p>You don't need experience.</p>
+    <p>You don't need to be in shape first.</p>
+    <p>You don't have to be a fighter.</p>
+    <p class="last">You just have to start.</p>
+    <a class="btn lg white" href="tel:15108306099">Book Your First Class</a>
   </div>
 </section>
 
@@ -454,18 +661,19 @@
   <div class="wrap foot-grid">
     <div>
       <img class="foot-logo" src="assets/logo/logo-240.png" alt="Bedroom Body Boxing">
-      2147 Lewis Street, Hercules, CA 94547<br>
+      2147 Lewis Street<br>
       <a href="tel:15108306099">(510) 830-6099</a> · <a href="mailto:idio11@hotmail.com">idio11@hotmail.com</a>
     </div>
     <div>
-      Open Monday – Sunday · Est. 2010<br>
-      <span class="d" style="border-color:rgba(255,255,255,.3)" title="NEEDED — legal business name for the footer">Legal business name to be confirmed</span>
+      <strong style="color:#C9D2E0">Boxing Conditioning for Every Body.</strong><br>
+      Classes daily, based on availability<br>
+      Bedroom Body Boxing
     </div>
   </div>
 </footer>
 
 <div class="callbar">
-  <a class="c1" href="tel:15108306099">Call</a>
+  <a class="c1" href="tel:15108306099">Book Your First Class</a>
   <a class="c2" href="sms:15108306099">Text</a>
 </div>
 
