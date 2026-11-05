@@ -1,0 +1,4 @@
+# Bedroom Body Boxing — draft site, not ready for search engines.
+# Remove this file (or replace with an Allow) at launch.
+User-agent: *
+Disallow: /
