@@ -43,11 +43,7 @@
   h2.big{font-size:clamp(34px,5.2vw,56px);font-weight:700;margin:0 0 16px}
   .sub{font-size:18px;line-height:1.6;color:var(--muted);max-width:60ch}
 
-  .d{border-bottom:1px dashed rgba(188,27,37,.5);cursor:help}
 
-  .pv{background:var(--navy);color:#D9E0EC;font-size:14.5px;line-height:1.5;padding:12px 0}
-  .pv b{color:#fff}
-  .pv .dot{border-bottom:1px dashed rgba(255,255,255,.6)}
 
   header{position:sticky;top:0;z-index:40;background:rgba(243,233,218,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:11px 0}
@@ -71,7 +67,7 @@
   .btn.white{background:#fff;color:var(--navy);border-color:#fff}
 
   .hero{position:relative;background:var(--navy-d);color:var(--cream);overflow:hidden;isolation:isolate}
-  .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:38% 45%;z-index:-2}
+  .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:38% 18%;z-index:-2}
   /* Lighter than before: the real gym is bright and daylit, so the scrim only
      needs to hold text contrast on the left, not darken the whole room. */
   .hero::after{content:"";position:absolute;inset:0;z-index:-1;
@@ -79,7 +75,7 @@
   /* On phones the frame is too narrow to hold both the wall and the copy,
      so fall back to a full wash and let the photo sit behind the text. */
   @media(max-width:759px){
-    .hero img.bg{object-position:58% 45%}
+    .hero img.bg{object-position:56% 20%}
     .hero::after{background:linear-gradient(180deg,rgba(14,23,41,.82) 0%,rgba(14,23,41,.88) 60%,rgba(14,23,41,.94) 100%)}
   }
   .hero-inner{padding:68px 0 76px;max-width:660px;margin-left:auto}
@@ -228,13 +224,6 @@
 </head>
 <body>
 
-<!-- ===== PREVIEW BANNER — delete before launch ===== -->
-<div class="pv">
-  <div class="wrap">
-    <b>PREVIEW —</b> draft site for Coach Lance. Anything <span class="dot">underlined like this</span> is still to be confirmed —
-    mostly schedule times, pricing and testimonials. Photos and video are from Lance's own clips. Nothing here is live yet.
-  </div>
-</div>
 
 <header>
   <div class="wrap nav">
@@ -386,7 +375,7 @@
       <div class="worry">
         <div class="q">"Do I need my own equipment?"</div>
         <div class="a">Bring comfortable clothes, athletic shoes and water. Bring boxing gloves if you own them.
-          <span class="d" title="TBD — confirm whether loaner gloves are available for first-timers">Loaner equipment to be confirmed.</span></div>
+          Loaner equipment to be confirmed.</div>
       </div>
     </div>
   </div>
@@ -435,7 +424,7 @@
             combinations and conditioning, designed to build fitness while keeping the hour engaging and fun.</p>
           <p><strong>No boxing experience is required.</strong> Beginners learn at their own pace while experienced
             participants keep developing their technique and conditioning.</p>
-          <div class="when"><span class="d" title="TBD — Lance to confirm the weekly class times">Days &amp; times vary — see schedule below</span></div>
+          <div class="when">Days &amp; times vary — see schedule below</div>
         </div>
       </div>
 
@@ -453,7 +442,7 @@
             <li>Athletic performance</li>
             <li>Skill and fighter development</li>
           </ul>
-          <div class="when">By appointment · <span class="d" title="TBD — personal training pricing not yet set">Pricing to be confirmed</span></div>
+          <div class="when">By appointment · Pricing to be confirmed</div>
         </div>
       </div>
     </div>
@@ -499,7 +488,7 @@
         <div class="stats">
           <div class="stat"><div class="n">20+</div><div class="l">Years coaching</div></div>
           <div class="stat"><div class="n">All</div><div class="l">Ages &amp; levels</div></div>
-          <div class="stat"><div class="n d" title="TBD — only publish verified certifications, licences, CPR/AED or affiliations">—</div><div class="l">Certifications</div></div>
+          <div class="stat"><div class="n">—</div><div class="l">Certifications</div></div>
         </div>
       </div>
     </div>
@@ -520,41 +509,26 @@
         <source src="assets/video/gym-loop-2.mp4" type="video/mp4">
       </video>
     </div>
-    <p style="font-size:14.5px;color:var(--muted);margin-top:14px">
-      <span class="d" title="TBD — more photos welcome, especially kids/teens, a women's session and an older member, to widen the range shown.">More photos welcome — kids and teens, a women's session and an older member would complete the picture.</span>
-    </p>
   </div>
 </section>
 
-<!-- ===== 8. MEMBER STORIES ===== -->
-<section class="proof">
-  <div class="wrap">
-    <div class="eyebrow">Member stories</div>
-    <h2 class="big">What people say</h2>
-    <p class="sub"><span class="d" title="TBD — collect 5–10 authentic testimonials. Aim for a beginner, a healthcare or business professional, a woman in the program, a parent of a youth participant, an older adult, and a competitive athlete.">These are placeholders. Real testimonials still to be collected — ideally a beginner, a professional, a woman in the program, a youth parent, an older adult and a competitive athlete.</span></p>
-    <div class="quotes">
-      <div class="quote"><p><span class="d" title="PLACEHOLDER — replace with a real testimonial">"I'd never put on a pair of gloves. Nobody made me feel like I didn't belong."</span></p><div class="who2">Placeholder</div></div>
-      <div class="quote"><p><span class="d" title="PLACEHOLDER — replace with a real testimonial">"I'm 62. Lance modified everything to what I could do, and I've kept going."</span></p><div class="who2">Placeholder</div></div>
-      <div class="quote"><p><span class="d" title="PLACEHOLDER — replace with a real testimonial">"My daughter's confidence changed more than her fitness did."</span></p><div class="who2">Placeholder</div></div>
-    </div>
-  </div>
-</section>
+<!-- ===== 8. MEMBER STORIES — hidden until real testimonials are collected.
+     Restore this section once Lance supplies 3-5 genuine quotes. ===== -->
 
 <!-- ===== 9. SCHEDULE & PRICING ===== -->
 <section class="sched" id="schedule">
   <div class="wrap">
     <div class="eyebrow">Schedule</div>
     <h2 class="big">When we train</h2>
-    <p class="sub">Classes and personal training run throughout the week based on availability.
-      <span class="d" title="TBD — Lance to confirm the actual weekly times. This layout is the placeholder.">The times below are a placeholder until Lance confirms the weekly schedule.</span></p>
+    <p class="sub">Classes and personal training run throughout the week based on availability. Times are confirmed when you book — call or text and Coach Lance will get you in.</p>
 
     <div class="sched-list">
-      <div class="row"><div class="day">Monday</div><div class="what">Bedroom Body Boxing</div><div class="time d" title="TBD">Time to be confirmed</div></div>
+      <div class="row"><div class="day">Monday</div><div class="what">Bedroom Body Boxing</div><div class="time d">Time to be confirmed</div></div>
       <div class="row"><div class="day">Tuesday</div><div class="what">Personal Boxing &amp; Conditioning</div><div class="time">By appointment</div></div>
-      <div class="row"><div class="day">Wednesday</div><div class="what">Bedroom Body Boxing</div><div class="time d" title="TBD">Time to be confirmed</div></div>
+      <div class="row"><div class="day">Wednesday</div><div class="what">Bedroom Body Boxing</div><div class="time d">Time to be confirmed</div></div>
       <div class="row"><div class="day">Thursday</div><div class="what">Personal Boxing &amp; Conditioning</div><div class="time">By appointment</div></div>
-      <div class="row"><div class="day">Friday</div><div class="what">Bedroom Body Boxing</div><div class="time d" title="TBD">Time to be confirmed</div></div>
-      <div class="row"><div class="day">Sat / Sun</div><div class="what">Classes &amp; personal training</div><div class="time d" title="TBD">Availability to be confirmed</div></div>
+      <div class="row"><div class="day">Friday</div><div class="what">Bedroom Body Boxing</div><div class="time d">Time to be confirmed</div></div>
+      <div class="row"><div class="day">Sat / Sun</div><div class="what">Classes &amp; personal training</div><div class="time d">Availability to be confirmed</div></div>
     </div>
 
     <div style="margin-top:64px">
@@ -591,7 +565,7 @@
 
       <p style="font-size:15.5px;line-height:1.65;color:var(--muted);margin-top:26px">
         Payment accepted by credit or debit card, Venmo, Zelle and Cash App.
-        <span class="d" title="TBD — confirm whether cash is accepted">Cash to be confirmed.</span>
+        Cash to be confirmed.
         A waiver is required before your first class — for under-18s, a parent or guardian signs.
       </p>
     </div>
@@ -618,9 +592,9 @@
 
     <div class="faq-head">What to bring</div>
     <details><summary>What should I wear and bring?</summary><p>Comfortable workout clothing, athletic shoes and water. Bring boxing gloves if you already own them.</p></details>
-    <details><summary>Do I need my own boxing gloves?</summary><p>Bring them if you have them. <span class="d" title="TBD — confirm loaner glove availability">Whether loaner gloves are available is still to be confirmed.</span></p></details>
+    <details><summary>Do I need my own boxing gloves?</summary><p>Bring them if you have them. Whether loaner gloves are available is still to be confirmed.</p></details>
     <details><summary>How early should I arrive?</summary><p>Ten to fifteen minutes before your first class, so there's time to complete your waiver and get set up.</p></details>
-    <details><summary>Where should I park?</summary><p><span class="d" title="TBD — Lance to confirm parking">Parking details to be confirmed.</span></p></details>
+    <details><summary>Where should I park?</summary><p>Parking details to be confirmed.</p></details>
 
     <div class="faq-head">Who trains here</div>
     <details><summary>Can experienced boxers train here?</summary><p>Yes. Experienced participants keep developing technique and conditioning in the same class, and Lance works with amateur and professional fighters.</p></details>
@@ -631,8 +605,8 @@
     <details><summary>Do you offer corporate or group sessions?</summary><p>Yes — corporate and small-group training are available. Get in touch about booking a group.</p></details>
 
     <div class="faq-head">Booking &amp; payment</div>
-    <details><summary>How do I book?</summary><p>Call or text Coach Lance at <a href="tel:15108306099" style="border-bottom:1px solid var(--red);text-decoration:none">(510) 830-6099</a>. <span class="d" title="TBD — online booking system not yet selected">Online booking is coming.</span></p></details>
-    <details><summary>What payment methods do you accept?</summary><p>Credit or debit card, Venmo, Zelle and Cash App. <span class="d" title="TBD — confirm cash">Cash to be confirmed.</span></p></details>
+    <details><summary>How do I book?</summary><p>Call or text Coach Lance at <a href="tel:15108306099" style="border-bottom:1px solid var(--red);text-decoration:none">(510) 830-6099</a>. Online booking is coming.</p></details>
+    <details><summary>What payment methods do you accept?</summary><p>Credit or debit card, Venmo, Zelle and Cash App. Cash to be confirmed.</p></details>
     <details><summary>Is there a waiver?</summary><p>Yes. A waiver is required before your first class. For participants under 18, a parent or guardian completes it.</p></details>
   </div>
 </section>
@@ -654,7 +628,7 @@
           <dd>Daily<br><span style="font-size:15px;color:var(--muted)">Classes and personal training scheduled throughout the week based on availability.</span></dd>
           <dt>Phone</dt><dd><a href="tel:15108306099">(510) 830-6099</a></dd>
           <dt>Email</dt><dd><a href="mailto:idio11@hotmail.com">idio11@hotmail.com</a></dd>
-          <dt>Social</dt><dd><span class="d" title="TBD — Instagram and Facebook profile URLs needed">Instagram &amp; Facebook — profile links to be added</span></dd>
+          <dt>Social</dt><dd>Instagram &amp; Facebook — profile links to be added</dd>
         </dl>
       </div>
     </div>
