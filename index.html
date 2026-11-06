@@ -114,7 +114,7 @@
 
   .cls-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:38px}
   .cls{background:#fff;border:1px solid var(--line);border-radius:2px;overflow:hidden;display:flex;flex-direction:column}
-  .cls img{width:100%;aspect-ratio:16/9;height:auto;object-fit:cover;object-position:50% 30%;display:block}
+  .cls img,.cls video{width:100%;aspect-ratio:16/9;height:auto;object-fit:cover;object-position:50% 30%;display:block;background:#16223C}
   .cls .body{padding:26px;display:flex;flex-direction:column;gap:11px;flex:1}
   .cls .tag{font:700 12px/1 'Barlow',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
   .cls h3{font-size:27px;font-weight:700;color:var(--navy)}
@@ -220,7 +220,11 @@
     body{padding-bottom:0}
     .callbar{display:none}
   }
-  @media(prefers-reduced-motion:reduce){ *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important} }
+  @media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
+    .cls video{display:none}
+    .cls video + img,.cls picture{display:block}
+  }
 </style>
 </head>
 <body>
@@ -416,7 +420,11 @@
 
     <div class="cls-grid">
       <div class="cls">
-        <img src="assets/photos/card-boxing.jpg" alt="Coach Lance beside the heavy bag at Bedroom Body Boxing" width="1600" height="900" loading="lazy" decoding="async">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/photos/boxing-poster.jpg"
+             aria-label="Pad work at Bedroom Body Boxing">
+          <source src="assets/video/boxing-loop.mp4" type="video/mp4">
+          <img src="assets/photos/boxing-poster.jpg" alt="Pad work at Bedroom Body Boxing" width="1600" height="900">
+        </video>
         <div class="body">
           <div class="tag">Group class · All levels · 1 hour</div>
           <h3>Bedroom Body Boxing</h3>
